@@ -1,0 +1,8 @@
+en:
+  dictionary:
+      code_action_failed: &code_action_failed 1105
+      action_failed: &action_failed
+        code: *code_action_failed
+        message: "Something went wrong. Please try again."
+  api:
+    v1:
