@@ -5,6 +5,8 @@ class ActionDispatch::Routing::Mapper
 end
 
 Rails.application.routes.draw do
+  mount Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Api::Engine => '/api-docs'
   root to: redirect("api/v1/home")
   draw :api
 end
