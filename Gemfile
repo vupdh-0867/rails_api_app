@@ -11,6 +11,7 @@ gem "rails", "~> 5.2.4", ">= 5.2.4.3"
 gem "config"
 gem "dotenv-rails"
 gem "mysql2"
+gem "rswag"
 gem "pagy"
 
 group :development, :test do
