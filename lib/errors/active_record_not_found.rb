@@ -11,12 +11,7 @@ module Errors
 
     def serialize
       [
-        {
-          resource: resource,
-          field: field,
-          code: code,
-          message: message
-        }
+        ActiveRecordValidationSerializer.new(resource, field, code, message).serialize
       ]
     end
 

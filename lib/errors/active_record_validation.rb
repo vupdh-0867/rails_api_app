@@ -12,7 +12,7 @@ module Errors
       record.errors.details.map do |field, details|
         detail = details.first[:error]
         message = messages[field].first
-        ValidationErrorSerializer.new(record, field, detail, message).serialize
+        ActiveRecordValidationSerializer.new(record, field, detail, message).serialize
       end
     end
   end
