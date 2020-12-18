@@ -5,6 +5,7 @@ class ActionDispatch::Routing::Mapper
 end
 
 Rails.application.routes.draw do
+  mount_devise_token_auth_for 'User', at: 'auth'
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
   root to: redirect("api/v1/home")
