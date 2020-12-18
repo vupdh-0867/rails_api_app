@@ -13,6 +13,7 @@ gem "dotenv-rails"
 gem "mysql2"
 gem "rswag"
 gem "pagy"
+gem "devise_token_auth"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
